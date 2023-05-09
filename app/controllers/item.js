@@ -5,6 +5,11 @@ import { action } from '@ember/object';
 export default class ItemController extends Controller {
   @tracked color = 'red';
 
+  //get the product image as per the color select
+  get productImage() {
+    return `/assets/images/beats-solo-${this.color}.png`;
+  }
+
   @action
   onChangeColor(newColor) {
     this.color = newColor;

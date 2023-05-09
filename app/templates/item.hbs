@@ -2,7 +2,7 @@
 <GeneralContainer>
   <div class='product item-details'>
     {{! Nested component  }}
-    <Product::Image />
+    <Product::Image @src={{this.productImage}} />
     <Product::Details
       @color={{this.color}}
       @onChangeColor={{this.onChangeColor}}
