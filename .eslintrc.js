@@ -55,4 +55,10 @@ module.exports = {
       extends: ['plugin:qunit/recommended'],
     },
   ],
+  'prettier/prettier': [
+    'error',
+    {
+      endOfLine: 'auto',
+    },
+  ],
 };
