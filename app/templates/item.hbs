@@ -3,7 +3,10 @@
   <div class='product item-details'>
     {{! Nested component  }}
     <Product::Image />
-    <Product::Details @color={{this.color}} />
+    <Product::Details
+      @color={{this.color}}
+      @onChangeColor={{this.onChangeColor}}
+    />
   </div>
   <h5 class='mt-5'>Features</h5>
   <ul>
