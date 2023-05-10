@@ -20,13 +20,3 @@ export default class CartController extends Controller {
     return this.subtotal + this.tax;
   }
 }
-
-// setupController(controller, model) {
-//     super.setupController(controller, model);
-//     //subtotal with reduce method
-//     const subtotal = model.reduce((acc, item) => {
-//       return acc + item.price;
-//     }, 0);
-//     //set the controller
-//     controller.set('subtotal', subtotal);
-//   }
