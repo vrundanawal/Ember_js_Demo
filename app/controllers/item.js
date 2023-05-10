@@ -9,8 +9,8 @@ export default class ItemController extends Controller {
   //get the product image as per the color select
   get productImage() {
     //return `/assets/images/beats-solo-${this.color}.png`;
-    return this.model.colors.find(({ color }) => color === this.color)?.image;
     //return this.model.colors.find(({ color }) => color === this.color).image;
+    return this.model.colors.find(({ color }) => color === this.color).image;
   }
 
   @action

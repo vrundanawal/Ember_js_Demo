@@ -7,7 +7,7 @@ export default class ItemRoute extends Route {
     //to get access for the product
     const product = products.find(({ id }) => id === item_id);
     console.log(product);
-    //return item_id;
+
     return product;
   }
 }
